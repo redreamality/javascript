@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Loops | Learn Javascript</title>
+        <title>Objects | Learn Javascript</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../loops/for.html" />
+        <link rel="next" href="../objects/creation.html" />
         
         
-        <link rel="prev" href="../conditional/concatenate.html" />
+        <link rel="prev" href="../functions/higher_order.html" />
         
 
-        <meta property="og:title" content="Loops | Learn Javascript">
+        <meta property="og:title" content="Objects | Learn Javascript">
         <meta property="og:site_name" content="Learn Javascript">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="GitbookIO/javascript" data-level="5" data-basepath=".." data-revision="1398632012230">
+    <div class="book" data-github="GitbookIO/javascript" data-level="7" data-basepath=".." data-revision="1398632012230">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -108,7 +108,7 @@
             <a href="https://github.com/GitbookIO/javascript/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/GitbookIO/javascript/edit/master/loops/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/GitbookIO/javascript/edit/master/objects/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -423,7 +423,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 57.57575757575758%;min-width: 54.54545454545455%;"></div>
+        <div class="inner" style="width: 75.75757575757575%;min-width: 72.72727272727273%;"></div>
     </div>
     <div class="chapters">
     
@@ -467,17 +467,17 @@
     
         <a href="../loops/README.html" title="Loops" class="chapter done new-chapter" data-progress="5" style="left: 57.57575757575758%;"></a>
     
-        <a href="../loops/for.html" title="For" class="chapter  " data-progress="5.1" style="left: 60.60606060606061%;"></a>
+        <a href="../loops/for.html" title="For" class="chapter done " data-progress="5.1" style="left: 60.60606060606061%;"></a>
     
-        <a href="../loops/while.html" title="While" class="chapter  " data-progress="5.2" style="left: 63.63636363636363%;"></a>
+        <a href="../loops/while.html" title="While" class="chapter done " data-progress="5.2" style="left: 63.63636363636363%;"></a>
     
-        <a href="../functions/README.html" title="Functions" class="chapter  new-chapter" data-progress="6" style="left: 66.66666666666667%;"></a>
+        <a href="../functions/README.html" title="Functions" class="chapter done new-chapter" data-progress="6" style="left: 66.66666666666667%;"></a>
     
-        <a href="../functions/declare.html" title="Declare" class="chapter  " data-progress="6.1" style="left: 69.6969696969697%;"></a>
+        <a href="../functions/declare.html" title="Declare" class="chapter done " data-progress="6.1" style="left: 69.6969696969697%;"></a>
     
-        <a href="../functions/higher_order.html" title="Higher order" class="chapter  " data-progress="6.2" style="left: 72.72727272727273%;"></a>
+        <a href="../functions/higher_order.html" title="Higher order" class="chapter done " data-progress="6.2" style="left: 72.72727272727273%;"></a>
     
-        <a href="../objects/README.html" title="Objects" class="chapter  new-chapter" data-progress="7" style="left: 75.75757575757575%;"></a>
+        <a href="../objects/README.html" title="Objects" class="chapter done new-chapter" data-progress="7" style="left: 75.75757575757575%;"></a>
     
         <a href="../objects/creation.html" title="Creation" class="chapter  " data-progress="7.1" style="left: 78.78787878787878%;"></a>
     
@@ -500,22 +500,11 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_31">
+                    <section class="normal" id="section-gitbook_48">
                     
-                        <h1 id="loops">Loops</h1>
-<p>Loops are repetitive conditions where one variable in the loop changes. Loops are handy, if you want to run the same code over and over again, each time with a different value.</p>
-<p>Instead of writing:</p>
-<pre><code class="lang-javascript">doThing(cars[<span class="hljs-number">0</span>]);
-doThing(cars[<span class="hljs-number">1</span>]);
-doThing(cars[<span class="hljs-number">2</span>]);
-doThing(cars[<span class="hljs-number">3</span>]);
-doThing(cars[<span class="hljs-number">4</span>]);
-</code></pre>
-<p>You can write:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i &lt; cars.length; i++) { 
-    doThing(cars[i]);
-}
-</code></pre>
+                        <h1 id="objects">Objects</h1>
+<p>The primitive types of JavaScript are <code>true</code>, <code>false</code>, numbers, strings, <code>null</code> and <code>undefined</code>. <strong>Every other value in an <code>object</code>.</strong></p>
+<p>In JavaScript objects contain <code>propertyName</code>: <code>propertyValue</code> pairs.</p>
 
                     
                     </section>
@@ -525,10 +514,10 @@ doThing(cars[<span class="hljs-number">4</span>]);
         </div>
 
         
-        <a href="../conditional/concatenate.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../functions/higher_order.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../loops/for.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../objects/creation.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
